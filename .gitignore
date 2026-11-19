@@ -1,0 +1,10 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*.pyd
+.pytest_cache/
+.tox/
+
+# OS
+.DS_Store
+Thumbs.db

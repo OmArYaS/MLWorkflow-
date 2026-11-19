@@ -1,0 +1,187 @@
+{
+  "best_model": "LogisticRegression",
+  "train_support": 31523,
+  "test_support": 7881,
+  "positive_share_train": 0.11667671224185515,
+  "positive_share_test": 0.11673645476462378,
+  "models": {
+    "LogisticRegression": {
+      "model": "LogisticRegression",
+      "cv": {
+        "accuracy": {
+          "mean": 0.818132867315844,
+          "std": 0.0063083746693335194
+        },
+        "precision": {
+          "mean": 0.3472964509245151,
+          "std": 0.011991829077060562
+        },
+        "recall": {
+          "mean": 0.634304199940846,
+          "std": 0.017188565107503877
+        },
+        "f1": {
+          "mean": 0.4487884317140103,
+          "std": 0.01361664610579701
+        },
+        "roc_auc": {
+          "mean": 0.7912346122273186,
+          "std": 0.010399085681519983
+        }
+      },
+      "holdout": {
+        "accuracy": 0.8257835300088822,
+        "precision": 0.36264402668283807,
+        "recall": 0.65,
+        "f1": 0.46555079797586607,
+        "roc_auc": 0.7960454363753334
+      },
+      "confusion_matrix": [
+        [
+          5910,
+          1051
+        ],
+        [
+          322,
+          598
+        ]
+      ],
+      "support": {
+        "train": 31523,
+        "test": 7881
+      }
+    },
+    "RandomForest": {
+      "model": "RandomForest",
+      "cv": {
+        "accuracy": {
+          "mean": 0.8670178771984205,
+          "std": 0.0037998695924931864
+        },
+        "precision": {
+          "mean": 0.43568188202923147,
+          "std": 0.014320288055165883
+        },
+        "recall": {
+          "mean": 0.4722718870156758,
+          "std": 0.011792914811317274
+        },
+        "f1": {
+          "mean": 0.45322875222550535,
+          "std": 0.013115425757389729
+        },
+        "roc_auc": {
+          "mean": 0.7651668598747907,
+          "std": 0.010230022918933839
+        }
+      },
+      "holdout": {
+        "accuracy": 0.8663875142748382,
+        "precision": 0.43303121852970794,
+        "recall": 0.4673913043478261,
+        "f1": 0.4495556717198118,
+        "roc_auc": 0.7710325540433346
+      },
+      "confusion_matrix": [
+        [
+          6398,
+          563
+        ],
+        [
+          490,
+          430
+        ]
+      ],
+      "support": {
+        "train": 31523,
+        "test": 7881
+      }
+    }
+  },
+  "best_model_features": {
+    "n_features": 63,
+    "kind": "coefficients",
+    "top_features": [
+      {
+        "feature": "emp.var.rate",
+        "coefficient": -2.1844517295323844
+      },
+      {
+        "feature": "month_mar",
+        "coefficient": 1.2588354347142778
+      },
+      {
+        "feature": "cons.price.idx",
+        "coefficient": 1.01882648610733
+      },
+      {
+        "feature": "month_jun",
+        "coefficient": -0.722067050332247
+      },
+      {
+        "feature": "month_nov",
+        "coefficient": -0.6766840544246427
+      },
+      {
+        "feature": "euribor3m",
+        "coefficient": 0.5962215721107872
+      },
+      {
+        "feature": "month_may",
+        "coefficient": -0.5710805925218977
+      },
+      {
+        "feature": "month_aug",
+        "coefficient": 0.5165549674805454
+      },
+      {
+        "feature": "poutcome_failure",
+        "coefficient": -0.360167680060106
+      },
+      {
+        "feature": "contact_telephone",
+        "coefficient": -0.3565019944368835
+      },
+      {
+        "feature": "education_illiterate",
+        "coefficient": 0.318930834415218
+      },
+      {
+        "feature": "month_dec",
+        "coefficient": 0.31715744885315916
+      },
+      {
+        "feature": "poutcome_success",
+        "coefficient": 0.29917062094059094
+      },
+      {
+        "feature": "job_student",
+        "coefficient": 0.28849576401353555
+      },
+      {
+        "feature": "contact_cellular",
+        "coefficient": 0.28626639685234445
+      },
+      {
+        "feature": "job_retired",
+        "coefficient": 0.2821636449889737
+      },
+      {
+        "feature": "job_missing",
+        "coefficient": -0.2434822626041508
+      },
+      {
+        "feature": "was_previously_contacted",
+        "coefficient": 0.23960437937256576
+      },
+      {
+        "feature": "nr.employed",
+        "coefficient": 0.18547686917327616
+      },
+      {
+        "feature": "month_apr",
+        "coefficient": -0.18255235021109023
+      }
+    ]
+  }
+}
